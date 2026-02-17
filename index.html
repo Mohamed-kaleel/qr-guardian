@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR-Guardian - Lost & Found</title>
+  <link rel="stylesheet" href="style.css " />
+  <script src="/static/guardian.js"></script>
+  <script src="{{ url_for('static', filename='guardian.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>QR-Guardian</h1>
+    <p>Smart QR-Based Lost & Found System</p>
+  </header>  <main>
+    <section class="form-section">
+      <h2>Register Your Item</h2>
+      <form action="/register" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="text" name="item" placeholder="Item Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="phone" placeholder="Your Phone (+91...)" required />
+        <button type="submit">Generate QR Code </button>
+      </form>
+    </section><section class="info-section">
+  <h3>How It Works</h3>
+  <ul>
+    <li>Register your item and get a unique QR code.</li>
+    <li>Stick or attach the QR to your item.</li>
+    <li>If found, the finder scans it and notifies you instantly.</li>
+  </ul>
+</section>
+
+  </main>  <footer>
+    <p>&copy; 2025 QR-Guardian | Created by Kaleel</p>
+  </footer>
+</body>
+</html>

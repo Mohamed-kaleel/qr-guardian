@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+*.egg-info/
+.env
+env/
+venv/
+.venv/
+.vscode/
+.idea/
+*.sqlite3
+*.db
+node_modules/
+.DS_Store
+Thumbs.db
+/.mypy_cache
+/.pytest_cache
+coverage/
+# OneDrive temp files
+~$*

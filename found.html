@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Item Found</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Item Information</h1>
+  </header>
+  <main>
+    <div class="form-section">
+      <h2>This item belongs to:</h2>
+      <p><strong>Name:</strong> {{ name }}</p>
+      <p><strong>Item:</strong> {{ item }}</p>
+      <p><strong>Email:</strong> <a href="mailto:{{ email }}">{{ email }}</a></p>
+      <p><strong>Phone:</strong> <a href="tel:{{ phone }}">{{ phone }}</a></p><p style="margin-top:20px;">Please contact the owner to return their item.</p>
+</div>
+
+  </main>
+</body>
+</html>
